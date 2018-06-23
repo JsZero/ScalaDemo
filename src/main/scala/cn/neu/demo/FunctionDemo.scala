@@ -37,6 +37,12 @@ object FunctionDemo {
       res
     }
 
+    // 函数在这里得到的式一个Seq的参数
     println(sum(1, 4, 9, 16, 25)) // output:55
+    // 但是如果我们直接传递一个值的序列作为参数，则会报错
+    // val s = sum(1 to 5)
+    //需要追加一个":_*"，这会将其转换成一个参数序列
+    val s = sum(1 to 5: _*)
+    println(s) // output:15
   }
 }
