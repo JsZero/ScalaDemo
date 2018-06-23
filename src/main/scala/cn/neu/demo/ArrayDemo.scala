@@ -41,7 +41,11 @@ object ArrayDemo {
     b.remove(2) // output: ArrayBuffer(10, 1, 8, 9, 6, 1, 2)
     // 从下标为2处的元素开始，移除三个元素
     b.remove(2, 3) // output: ArrayBuffer(10, 1, 1, 2)
-    // 3、ArrayBuffer数组转换为Array
+
+    // ArrayBuffer和Array的相互转换
+    // ArrayBuffer数组转换为Array
     b.toArray // output: Array(10, 1, 1, 2)
+    // Array数组转换为ArrayBuffer
+    a.toBuffer // output: ArrayBuffer(Hello, World)
   }
 }
