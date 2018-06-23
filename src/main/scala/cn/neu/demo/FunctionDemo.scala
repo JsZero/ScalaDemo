@@ -39,10 +39,41 @@ object FunctionDemo {
 
     // 函数在这里得到的式一个Seq的参数
     println(sum(1, 4, 9, 16, 25)) // output:55
+
     // 但是如果我们直接传递一个值的序列作为参数，则会报错
     // val s = sum(1 to 5)
     //需要追加一个":_*"，这会将其转换成一个参数序列
     val s = sum(1 to 5: _*)
     println(s) // output:15
+    // 多个这样也会编译出错
+    // sum(1 to 5: _*,3 to 6:_*)
+
+    //在递归中我们可能会用到上述的规则，如
+    def recursiveSum(args: Int*): Int = {
+      if (args.isEmpty) 0
+      else args.head + recursiveSum(args.tail: _*)
+    }
+
+    // 四、过程
+    // 在Scala中，不返回任何值的函数被称为过程（procedure），调用过程是为了他所产生的副作用
+    // 写法1.不带等号（快学Scala中的写法）
+    def box1(s: String) {
+      val border = "-" * (s.length + 2)
+      print(f"$border%n|$s|%n$border%n")
+    }
+
+    // 写法2.其实就是让编译器推测出返回结果
+    def box2(s: String) = {
+      val border = "-" * (s.length + 2)
+      print(f"$border%n|$s|%n$border%n")
+    }
+
+    // 写法3.标注出返回值Unit
+    def box3(s: String): Unit = {
+      val border = "-" * (s.length + 2)
+      print(f"$border%n|$s|%n$border%n")
+    }
+    //以上三种写法，写的时候还是按照第三个来吧，第一种在写非过程函数的时候忘记写等号，容易造成错误
+    // ，第二种万一函数最后一表达式有值的话，就不是过程了
   }
 }
