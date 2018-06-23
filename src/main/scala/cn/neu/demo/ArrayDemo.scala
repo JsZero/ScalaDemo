@@ -1,6 +1,7 @@
 package cn.neu.demo
 
 import scala.collection.mutable.ArrayBuffer
+import scala.math._
 
 object ArrayDemo {
   def main(args: Array[String]): Unit = {
@@ -47,5 +48,31 @@ object ArrayDemo {
     b.toArray // output: Array(10, 1, 1, 2)
     // Array数组转换为ArrayBuffer
     a.toBuffer // output: ArrayBuffer(Hello, World)
+
+    // Array和ArrayBuffer的遍历
+    // 在Scala中数组和变长数组的遍历是一样的，不像java和C++会有所不同
+    // 顺序遍历每个元素（Ps. until和to相似，但是排除了最后一个元素）
+    for (i <- 0 until b.length)
+      print(s"$i:${b(i)}${if (i != b.length - 1) "," else ""}") // output: 0:10,1:1,2:1,3:2
+    println()
+    for (i <- b.indices)
+      print(s"$i:${b(i)}${if (i != b.length - 1) "," else ""}") // output: 0:10,1:1,2:1,3:2
+    println()
+    // 顺序遍历元素，每两个一跳
+    for (i <- 0 until b.length by 2)
+      print(s"$i:${b(i)}${if (i != ceil(b.length / 2)) "," else ""}") // output: 0:10,2:1
+    println()
+    for (i <- b.indices by 2)
+      print(s"$i:${b(i)}${if (i != ceil(b.length / 2)) "," else ""}") // output: 0:10,2:1
+    println()
+    //逆序遍历元素
+    for (i <- b.indices.reverse)
+      print(s"$i:${b(i)}${if (i != 0) "," else ""}") // output: 0:10,1:1,2:1,3:2
+    // 快学Scala上说是逆序访问，我尝试了2.11.11和2.12.6版本的Scala发现并不是，结果为空
+    // for (i <- 0 until b.length by -1)
+    //   print(s"$i:${b(i)}${if (i != b.length - 1) "," else ""}")
+    //
+    // println()
+
   }
 }
