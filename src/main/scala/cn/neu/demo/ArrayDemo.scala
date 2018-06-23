@@ -43,5 +43,6 @@ object ArrayDemo {
     b.remove(2, 3) // output: ArrayBuffer(10, 1, 1, 2)
     // 3、ArrayBuffer数组转换为Array
     b.toArray // output: Array(10, 1, 1, 2)
+
   }
 }
