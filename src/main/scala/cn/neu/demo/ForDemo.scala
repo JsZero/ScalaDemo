@@ -24,5 +24,6 @@ object ForDemo {
     // Output: HIeflmlmop
     print(for (i <- 0 to 1; c <- "Hello") yield (c + i).toChar)
     // Output: Vector(H, e, l, l, o, I, f, m, m, p)
+
   }
 }
