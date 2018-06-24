@@ -1,6 +1,6 @@
 package cn.neu.demo
 
-import scala.collection.mutable.ArrayBuffer
+import scala.collection.mutable.{ArrayBuffer, Buffer}
 import scala.math._
 
 object ArrayDemo {
@@ -141,5 +141,33 @@ object ArrayDemo {
     println(f.mkString(" ")) // output: 1 7 2 9
     println(f.toString) // output: ArrayBuffer(1, 7, 2, 9)
 
+    // 多维数组
+    // 1、创建多维数组（多维数组的类型类似于Array[Array[Double]]）
+    // 创建规则多维数组，用 ofDim 函数
+    val matrix = Array.ofDim[Double](3, 4)
+    // 创建不规则多维数组
+    val triangle = new Array[Array[Int]](10)
+    for (i <- triangle.indices) {
+      triangle(i) = new Array[Int](i + 1)
+    }
+    // 2.多维数组元素的取用
+    matrix(1)(3) = 42
+
+    // 与Java的互操作
+    // 1、Java中允许给定类型的数组可以被转换成超类型的数组，例如String[]数组可以被传入一个以Object[]作为参数的方法。
+    // 但是在Scala中这样做被认为是不安全的，所以应该采用如下的做法
+    val j = Array("Mary", "a", "had", "lamb", "little")
+    java.util.Arrays.binarySearch(a.asInstanceOf[Array[Object]], "beef")
+    // 以上仅仅是个例子，在Scala中查找我们会这样做
+    import scala.collection.Searching._
+    val result = j.search("beef") // 在位置n处查找成功会返回Found(n)；未查找到但是应该被插入到位置n之前，结果则是InsertionPoint(n)
+    // 2、当调用一个Java方法，其接受或者返回java.util.List，我们会引入scala.collection.JavaConversions中的方法
+    // eg. java.util.ProcessBuilder类中有一个以List(String)为参数的构造器，在Scala中调用写法如下
+    import scala.collection.JavaConversions.bufferAsJavaList
+    val command = ArrayBuffer("ls", "-al", "/home/cay")
+    val pb = new ProcessBuilder(command)
+    // 反之，我们也可以让Java方法返回的List自动转换成一个Buffer
+    import scala.collection.JavaConversions.asScalaBuffer
+    val cmd: Buffer[String] = pb.command()
   }
 }
