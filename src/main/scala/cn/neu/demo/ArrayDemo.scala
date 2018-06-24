@@ -68,11 +68,44 @@ object ArrayDemo {
     //逆序遍历元素
     for (i <- b.indices.reverse)
       print(s"$i:${b(i)}${if (i != 0) "," else ""}") // output: 0:10,1:1,2:1,3:2
+    println()
     // 快学Scala上说是逆序访问，我尝试了2.11.11和2.12.6版本的Scala发现并不是，结果为空
     // for (i <- 0 until b.length by -1)
     //   print(s"$i:${b(i)}${if (i != b.length - 1) "," else ""}")
-    //
     // println()
+    // 当不需要使用下标的时候我们可以直接访问数组元素，
+    // 类似于Java中的增强for循环、c++中的“基于区间的”for循环
+    for (elem <- b)
+      print(s"${elem} ") // output: 10 1 1 2
+    println()
 
+    // 数组转换
+    // 数组转换是指从一个数组（或者数组缓冲出发），通过某种规则转换出新的数组（数组缓冲），而不改变原数组（数组缓冲）
+    val d = Array(2, 3, 5, 7, 11)
+    // 场景：找到该数组中的奇数，并翻倍生成新数组
+    // 第一种方式是使用 for/ yield 循环（yield 出来的集合类型跟遍历的集合类型一致，每次迭代增加一个元素）
+    val d1 = for (elem <- d if elem % 2 != 0) yield 2 * elem // output: Array(6, 10, 14, 22)
+    // 第二种方式是使用 filter 和 map 操作
+    val d2 = d.filter(_ % 2 != 0).map(2 * _) // output: Array(6, 10, 14, 22)
+    // 第二种方式也可以写成这样 val d3 = d filter{_ % 2 != 0} map{2 * _}
+    // 当我们有这样一种情况，要从一个整数数组缓冲中移除所有的负数
+    // 第一印象的做法是这样，
+    var n = b.length
+    var i = 0
+    while (i < n) {
+      if (b(i) >= 0) i += 1
+      else {
+        b.remove(i);
+        n -= 1
+      }
+    }
+    // 注意在移除元素的时候不递增 i 而是递减 n ，但是这种做法的缺点就是移动了后面要删除的元素，效率比较低
+    // 正确的做法1.在新数组中记录要移除的元素，然后按顺序从后往前删除
+    val positionToRemove = for (i <- b.indices if b(i) < 0) yield i
+    for (i <- positionToRemove.reverse) b.remove(i)
+    // 正确的做法2.（推荐）记录所有满足条件不需要移除的元素位置，将这些元素向前赋值堆叠，然后把尾部截断即可
+    val positionToKeep = for (i <- b.indices if b(i) >= 0) yield i
+    for (i <- positionToKeep.indices) b(i) = b(positionToKeep(i))
+    b.trimEnd(b.length - positionToKeep.length)
   }
 }
