@@ -95,7 +95,7 @@ object ArrayDemo {
     while (i < n) {
       if (b(i) >= 0) i += 1
       else {
-        b.remove(i);
+        b.remove(i)
         n -= 1
       }
     }
@@ -107,5 +107,39 @@ object ArrayDemo {
     val positionToKeep = for (i <- b.indices if b(i) >= 0) yield i
     for (i <- positionToKeep.indices) b(i) = b(positionToKeep(i))
     b.trimEnd(b.length - positionToKeep.length)
+
+    // 常用函数/方法
+    // sum 函数：求和函数，要求数组或者数组缓冲的元素类型必须是数值类型
+    val e = Array(1, 7, 2, 9)
+    val f = ArrayBuffer(1, 7, 2, 9)
+    println(e.sum) // output: 19
+    println(f.sum) // output: 19
+    // min/max 函数：求最小/最大值，要求元素必须支持比较操作（即，带有 Ordered 特质）
+    println(e.min) // output: 1
+    println(e.max) // output: 9
+    println(f.min) // output: 1
+    println(f.max) // output: 9
+    // sorted 方法：将数组或者数组缓冲排序并返回排序后的数组或者数组缓冲，不会修改原始版本
+    println(e.sorted.mkString("<", ",", ">")) // output:<1,2,7,9>
+    println(e.mkString("<", ",", ">")) // output:<1,7,2,9>
+    println(f.sorted.mkString("<", ",", ">")) // output:<1,2,7,9>
+    println(f.mkString("<", ",", ">")) // output:<1,7,2,9>
+    // sortWith 方法：使用自定义的比较函数对元素进行比较，同样不改变原数组/数组缓冲
+    println(e.sortWith(_ > _).mkString("<", ",", ">")) // output:<9,7,2,1>
+    println(e.mkString("<", ",", ">")) // output:<1,7,2,9>
+    println(f.sortWith(_ > _).mkString("<", ",", ">")) // output:<9,7,2,1>
+    println(f.mkString("<", ",", ">")) // output:<1,7,2,9>
+    // quickSort 方法：对数组进行排序，改变原数组内的顺序（数组缓冲不能使用），要求元素必须支持比较操作（即，带有 Ordered 特质）
+    println(e.mkString("(", ",", ")")) // output: (1,7,2,9)
+    scala.util.Sorting.quickSort(e)
+    println(e.mkString("(", ",", ")")) // output: (1,2,7,9)
+    // mkString 方法：类似与 toString 方法，但是有区别
+    // 对数组和数组缓冲而言 mkString 都是把集合内元素拼接成字符串
+    // 对数组而言 toString 输出的是内存地址，对数组缓冲而言 toString 输出的是类型加上元素内容，报告了类型便于调试
+    println(e.mkString(" ")) // output: 1 2 7 9
+    println(e.toString) // output: [I@5cc7c2a6
+    println(f.mkString(" ")) // output: 1 7 2 9
+    println(f.toString) // output: ArrayBuffer(1, 7, 2, 9)
+
   }
 }
