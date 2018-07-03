@@ -3,6 +3,7 @@ package cn.neu.demo
 import scala.collection.mutable.ArrayBuffer
 
 class NetWork {
+  outer =>
 
   class Member(val name: String) {
     val contacts = new ArrayBuffer[Member]
@@ -10,7 +11,7 @@ class NetWork {
 
   private val members = new ArrayBuffer[Member]
 
-  def join(name: String): NetWork.this.Member = {
+  def join(name: String): outer.Member /* 或者用NetWork.this.Member也行，可以用outer.是因为第6行 */ = {
     val m = new Member(name)
     members += m
     m
@@ -30,5 +31,6 @@ object NestedClassDemo {
     fred.contacts += wilma
     val barney = myFace.join("Barney") // wilma类型是myFace.Member，其contact存储的也是myFace.Member类型
     // fred.contacts += barney  // 编译错误，chatter.Member和myFace.Member不匹配
+
   }
 }
