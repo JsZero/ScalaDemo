@@ -29,6 +29,6 @@ object NestedClassDemo {
     val wilma = chatter.join("Wilma") // wilma类型是chatter.Member，其contact存储的也是chatter.Member类型
     fred.contacts += wilma
     val barney = myFace.join("Barney") // wilma类型是myFace.Member，其contact存储的也是myFace.Member类型
-    // fred.contacts += barney // 编译错误，chatter.Member和myFace.Member不匹配
+    // fred.contacts += barney  // 编译错误，chatter.Member和myFace.Member不匹配
   }
 }
