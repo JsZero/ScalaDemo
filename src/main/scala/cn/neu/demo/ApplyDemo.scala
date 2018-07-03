@@ -22,6 +22,5 @@ object AccountAD {
 object ApplyDemo {
   def main(args: Array[String]): Unit = {
     val acct = AccountAD(1000.0) // apply方法会调用相应的Class的构造器，省去了new关键字，简化了写法
-    acct.deposit(1)
   }
 }
