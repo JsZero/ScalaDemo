@@ -6,8 +6,6 @@ package com {
 
       class Employee {}
 
-      g
-
     }
 
   }
@@ -97,6 +95,12 @@ package people {
 // 9、重命名和隐藏方法
 // 选取器引入多个成员
 import java.awt.{Color, Font}
+
+// 10、每个Scala程序都隐式地以如下代码开始：
+// import java.lang._
+// import scala._
+// import Predef._
+// 隐式引入这三个包，与其他引入不同的是，这里后面的引入会覆盖掉前面的引入
 
 import scala.collection.mutable
 // 选取器选取成员并重命名
