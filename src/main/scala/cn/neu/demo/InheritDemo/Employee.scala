@@ -20,9 +20,9 @@ class Employee extends Person {
 }
 */
 class Person(var name: String, var age: Int) {
-  def this() {
-    this("", "")
-  }
+//  def this() {
+//    this("s","s")
+//  }
 }
 
 // 5、超类的构造
@@ -34,7 +34,7 @@ class PathWriter(p: Path, cs: Charset) extends java.io.PrintWriter(Files.newBuff
 
 object Employee {
   def main(args: Array[String]): Unit = {
-    val p = new Person
+    val p = new Person("",2)
     // 3、类型检查与类型转换
     if (p.isInstanceOf[Employee]) { // p是Employee或其子类对象，返回true，否则返回false
       val s = p.asInstanceOf[Employee] // p是Employee或其子类对象，返回Employee对象，否则抛出异常
