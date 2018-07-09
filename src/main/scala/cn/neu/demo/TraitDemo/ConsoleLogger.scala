@@ -11,12 +11,12 @@ class ConsoleLogger extends Logger with Cloneable with Serializable { // extends
 }
 
 trait ConsoleLoggerTrait {
-  def log(msg: String) { // 特质中可以存在具体的方法
+  def log(msg: String) { // 特质中可以存在具体的方法，该方法会被声明为public static
     println(msg)
   }
 }
 
-class Account { // 伴生类
+class Account {
   protected var balance = 0.0
 
   def deposit(amount: Double) {
