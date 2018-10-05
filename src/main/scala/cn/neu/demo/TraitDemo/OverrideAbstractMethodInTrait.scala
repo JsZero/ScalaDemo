@@ -7,10 +7,9 @@ trait A {
 }
 
 trait B extends A {
-  abstract override def log(msg: String): Unit = { // 调用父类中的抽象方法log（super.log()），需要在子类中重写方法并显式声明为abstract override
+  abstract override def log(msg: String): Unit = { // 调用父类中的抽象方法log（就是super.log()），需要在子类中重写方法并显式声明为abstract override
     super.log(s"${java.time.Instant.now()} $msg")
   }
-
   abstract override def logP(msg: String): Unit = {
     super.log(msg)
   }

@@ -1,0 +1,1340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8ea418a7-073d-4183-93e4-fde67b1e5da4" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib__2_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__commons_logging_commons_logging_1_1_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_directory_studio_org_apache_commons_collections_3_2_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalaj_scalaj_http_2_11_2_3_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_slf4j_slf4j_api_1_7_10_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/postgresql-42.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/application.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/test.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_01.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_02.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_03.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_04.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_05.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_05p.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_06.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_07.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_08.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_09.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/ChangeDirDemo/ChangeDemo.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/ChangeDirDemo/ChangeDirFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/ChangeDirDemo/OutPutCsv.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/CollectionDemo/CollectionOverview.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/CollectionDemo/Scala集合特质.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/ConfDemo/Conf.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/DateDemo/DateFormatDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/JavaDemo/TreeSetDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/SimplifiedHttpDemo/SimplifiedHttpDemo.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/hdfsDemo/hdfsRequestDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/scalademo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/scalademo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/AppDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/CommonDemo/AppDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/ApplyDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/CommonDemo/ApplyDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/ArrayDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/CommonDemo/ArrayDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/ClassDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/CommonDemo/ClassDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/EnumerationDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/CommonDemo/EnumerationDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/ForDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/CommonDemo/ForDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/FunctionDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/CommonDemo/FunctionDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/NestedClassDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/CommonDemo/NestedClassDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/ObjectDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/CommonDemo/ObjectDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/PackageDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/CommonDemo/PackageDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/TraitDemo/OverrideAbstractMethodInTrait.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/neu/demo/TraitDemo/OverrideAbstractMethodInTrait.scala" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/project/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="SBT">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ScalaDemo" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ChangeDirFormat.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/ChangeDirDemo/ChangeDirFormat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimplifiedHttpDemo.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/SimplifiedHttpDemo/SimplifiedHttpDemo.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>import</find>
+      <find>长度</find>
+      <find>horstman</find>
+      <find>fina</find>
+      <find>f&quot;</find>
+      <find>SavingAccount</find>
+      <find>actorOf</find>
+      <find>stop</find>
+      <find>\</find>
+      <find>getHostConfiguration</find>
+      <find>org.postgresql.Driver</find>
+      <find>System.out.println</find>
+      <find>System.out.print</find>
+      <find>us_5min_rate.csv</find>
+      <find>successful</find>
+      <find>num</find>
+      <find>dat</find>
+      <find>getData</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>/</replace>
+      <replace>successfully</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/ForDemo.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/FunctionDemo.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/ArrayDemo.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/peopleFeature.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/ClassDemo.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/NestedClassDemo.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/ApplyDemo.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/EnumerationDemo.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/AppDemio.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/AppDemo.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/inherit/Employee.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/inheritDemo/Employee.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/PackageDemo.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/InheritDemo/AnonymousSubClass.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/InheritDemo/Employee.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/Test.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/InheritDemo/AbstractClass.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/InheritDemo/ConstructSeq.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/InheritDemo/OverrideField.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/practise/chapter8/first/BankAccount.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/practise/chapter8/first/CheckingAccount.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/ObjectDemo.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/TraitDemo/ObjectWithTrait.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/TraitDemo/ConsoleLogger.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/CollectionDemo/CollectionOverview.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/TraitDemo/OverrideAbstractMethodInTrait.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_01.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_02.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_3.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_04.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_05.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_05p.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_06.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_07.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/ChangeDirDemo/ChangeDemo.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/JavaDemo/TreeSetDemo.java" />
+        <option value="$PROJECT_DIR$/resources/application.conf" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/ConfDemo/Conf.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/hdfsDemo/hdfsRequestDemo.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_08.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_09.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/CommonDemo/ForDemo.scala" />
+        <option value="$PROJECT_DIR$/build.sbt" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/ChangeDirDemo/OutPutCsv.java" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/ChangeDirDemo/ChangeDirFormat.java" />
+        <option value="$PROJECT_DIR$/src/main/scala/cn/neu/demo/SimplifiedHttpDemo/SimplifiedHttpDemo.scala" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/Program Files (x86)/Maven/apache-maven-3.5.3" />
+        <option name="userSettingsFile" value="D:\Program Files (x86)\Maven\apache-maven-3.5.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ScalaDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScalaDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScalaDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScalaDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScalaDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScalaDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScalaDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScalaDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScalaDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScalaDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScalaDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScalaDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScalaDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScalaDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="ChangeDirDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScalaDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScalaDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="SimplifiedHttpDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScalaDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScalaDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="TraitDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScalaDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScalaDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ChangesTree.GroupingKeys" value="module&#10;directory" />
+    <property name="SearchEverywhereHistoryKey" value="Inclusive&#9;null&#9;null&#10;Iterable&#9;FILE&#9;jar://C:/Users/imsha/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.11-sources.jar!/scala/collection/Iterable.scala" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspace\idea-workspace\ScalaDemo\lib" />
+      <recent name="D:\Workspace\idea-workspace\ScalaDemo\src\main\scala\cn\neu\demo\CollectionDemo" />
+      <recent name="D:\Workspace\idea-workspace\ScalaDemo\src\main\scala\cn\neu\demo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspace\idea-workspace\ScalaDemo\src\main\scala\cn\neu\demo\CollectionDemo" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.ChangeDirFormat">
+    <configuration name="ChangeDirFormat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.neu.demo.ChangeDirDemo.ChangeDirFormat" />
+      <module name="scalademo" />
+      <option name="PROGRAM_PARAMETERS" value="all store\SHA118 store\SHA130 store\SHA203 store\SHA211 store\SHA221 store\SHA237 store\SHA257 store\SHA287 store\SHA453 store\SHA494 2018-03-05" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.neu.demo.ChangeDirDemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Example_07" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="cn.neu.demo.AkkaDemo.Example_07" />
+      <module name="scalademo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.neu.demo.AkkaDemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Example_08" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="cn.neu.demo.AkkaDemo.Example_08" />
+      <module name="scalademo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.neu.demo.AkkaDemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="OutPutCsv" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.neu.demo.ChangeDirDemo.OutPutCsv" />
+      <module name="scalademo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.neu.demo.ChangeDirDemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="SimplifiedHttpDemo" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="cn.neu.demo.SimplifiedHttpDemo.SimplifiedHttpDemo" />
+      <module name="scalademo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.neu.demo.SimplifiedHttpDemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Example_07" />
+      <item itemvalue="Application.Example_08" />
+      <item itemvalue="Application.ChangeDirFormat" />
+      <item itemvalue="Application.OutPutCsv" />
+      <item itemvalue="Application.SimplifiedHttpDemo" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ChangeDirFormat" />
+        <item itemvalue="Application.SimplifiedHttpDemo" />
+        <item itemvalue="Application.OutPutCsv" />
+        <item itemvalue="Application.Example_08" />
+        <item itemvalue="Application.Example_07" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="ScalaDemo" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="scalademo" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="scalademo-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$/build.sbt" value="3155781029" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="2096222171" />
+        <entry key="D:\Workspace\idea-workspace\ScalaDemo" value="3067870210520" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="D:\Workspace\idea-workspace\ScalaDemo" value="RE_IMPORT" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ea418a7-073d-4183-93e4-fde67b1e5da4" name="Default" comment="" />
+      <created>1529734772717</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1529734772717</updated>
+      <workItem from="1529734775176" duration="17864000" />
+      <workItem from="1529766786782" duration="39000" />
+      <workItem from="1529819575304" duration="9657000" />
+      <workItem from="1530338370069" duration="686000" />
+      <workItem from="1530339172103" duration="599000" />
+      <workItem from="1530410766919" duration="44000" />
+      <workItem from="1530413460010" duration="611000" />
+      <workItem from="1530495403607" duration="6255000" />
+      <workItem from="1530579914844" duration="21077000" />
+      <workItem from="1530611489204" duration="5321000" />
+      <workItem from="1530667925878" duration="5564000" />
+      <workItem from="1530839624538" duration="23661000" />
+      <workItem from="1530951732102" duration="7417000" />
+      <workItem from="1531023690475" duration="8853000" />
+      <workItem from="1531098316359" duration="20772000" />
+      <workItem from="1531184438604" duration="2151000" />
+      <workItem from="1531832399752" duration="619000" />
+      <workItem from="1532591509528" duration="3159000" />
+      <workItem from="1536917176387" duration="2910000" />
+      <workItem from="1536994831977" duration="3009000" />
+      <workItem from="1537081025115" duration="721000" />
+      <workItem from="1537165609829" duration="85000" />
+      <workItem from="1537180310098" duration="1209000" />
+      <workItem from="1537234936775" duration="24000" />
+      <workItem from="1537237641989" duration="310000" />
+      <workItem from="1537240577862" duration="10517000" />
+      <workItem from="1537321616292" duration="8413000" />
+      <workItem from="1537415214695" duration="4020000" />
+      <workItem from="1537495925299" duration="5395000" />
+      <workItem from="1537521768250" duration="14000" />
+      <workItem from="1537856312268" duration="1346000" />
+      <workItem from="1537955191415" duration="3847000" />
+      <workItem from="1538013774920" duration="1524000" />
+      <workItem from="1538101237645" duration="278000" />
+      <workItem from="1538127939802" duration="20359000" />
+      <workItem from="1538274436765" duration="4633000" />
+      <workItem from="1538711300618" duration="22000" />
+    </task>
+    <task id="LOCAL-00001" summary="Function demo">
+      <created>1529738031059</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1529738031059</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Function demo">
+      <created>1529741431795</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1529741431795</updated>
+    </task>
+    <task id="LOCAL-00003" summary="commit message">
+      <created>1529741538070</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1529741538070</updated>
+    </task>
+    <task id="LOCAL-00004" summary="commit message">
+      <created>1529741866004</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1529741866004</updated>
+    </task>
+    <task id="LOCAL-00005" summary="commit message">
+      <created>1529743275059</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1529743275059</updated>
+    </task>
+    <task id="LOCAL-00006" summary="something about array in Scala">
+      <created>1529750996580</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1529750996581</updated>
+    </task>
+    <task id="LOCAL-00007" summary="something about array in Scala">
+      <created>1529757351457</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1529757351457</updated>
+    </task>
+    <task id="LOCAL-00008" summary="something about array in Scala">
+      <created>1529757377336</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1529757377336</updated>
+    </task>
+    <task id="LOCAL-00009" summary="something about array in Scala">
+      <created>1529757402749</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1529757402749</updated>
+    </task>
+    <task id="LOCAL-00010" summary="something about array in Scala">
+      <created>1529757598667</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1529757598667</updated>
+    </task>
+    <task id="LOCAL-00011" summary="something about array in Scala">
+      <created>1529766662564</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1529766662564</updated>
+    </task>
+    <task id="LOCAL-00012" summary="something about array in Scala">
+      <created>1529822381577</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1529822381577</updated>
+    </task>
+    <task id="LOCAL-00013" summary="something about array in Scala">
+      <created>1529825702998</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1529825702998</updated>
+    </task>
+    <task id="LOCAL-00014" summary="something about array in Scala">
+      <created>1529829012617</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1529829012617</updated>
+    </task>
+    <task id="LOCAL-00015" summary="something about array in Scala">
+      <created>1530497480411</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1530497480412</updated>
+    </task>
+    <task id="LOCAL-00016" summary="something about array in Scala">
+      <created>1530583993258</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1530583993259</updated>
+    </task>
+    <task id="LOCAL-00017" summary="something about array in Scala">
+      <created>1530589171191</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1530589171191</updated>
+    </task>
+    <task id="LOCAL-00018" summary="something about class in Scala">
+      <created>1530589249408</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1530589249408</updated>
+    </task>
+    <task id="LOCAL-00019" summary="something about class in Scala">
+      <created>1530599365717</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1530599365717</updated>
+    </task>
+    <task id="LOCAL-00020" summary="something about nested class in Scala">
+      <created>1530599402702</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1530599402702</updated>
+    </task>
+    <task id="LOCAL-00021" summary="something about nested class in Scala">
+      <created>1530599996076</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1530599996076</updated>
+    </task>
+    <task id="LOCAL-00022" summary="something about object in Scala">
+      <created>1530612920338</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1530612920338</updated>
+    </task>
+    <task id="LOCAL-00023" summary="something about apply method in Scala">
+      <created>1530613956436</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1530613956436</updated>
+    </task>
+    <task id="LOCAL-00024" summary="something about apply method in Scala">
+      <created>1530613979960</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1530613979960</updated>
+    </task>
+    <task id="LOCAL-00025" summary="something about apply method in Scala">
+      <created>1530616543728</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1530616543728</updated>
+    </task>
+    <task id="LOCAL-00026" summary="something about App in Scala">
+      <created>1530668854310</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1530668854310</updated>
+    </task>
+    <task id="LOCAL-00027" summary="something about Package in Scala">
+      <created>1530840264866</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1530840264866</updated>
+    </task>
+    <task id="LOCAL-00028" summary="something about Package in Scala">
+      <created>1530852006248</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1530852006248</updated>
+    </task>
+    <task id="LOCAL-00029" summary="something about Package in Scala">
+      <created>1530854121982</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1530854121982</updated>
+    </task>
+    <task id="LOCAL-00030" summary="something about Inherit in Scala">
+      <created>1530866138485</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1530866138485</updated>
+    </task>
+    <task id="LOCAL-00031" summary="something about Abstract Class in Scala">
+      <created>1530971040653</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1530971040653</updated>
+    </task>
+    <task id="LOCAL-00032" summary="something about Construction order and advance definition in Scala">
+      <created>1531023881984</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1531023881984</updated>
+    </task>
+    <task id="LOCAL-00033" summary="something about Construction order and advance definition in Scala">
+      <created>1531100160568</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1531100160568</updated>
+    </task>
+    <task id="LOCAL-00034" summary="something about Construction order and advance definition in Scala">
+      <created>1531104629418</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1531104629418</updated>
+    </task>
+    <task id="LOCAL-00035" summary="something about Construction order and advance definition in Scala">
+      <created>1531106407000</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1531106407000</updated>
+    </task>
+    <task id="LOCAL-00036" summary="something about Construction order and advance definition in Scala">
+      <created>1531119352523</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1531119352523</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="202985000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="6" />
+      <window_info anchor="right" id="sbt" order="0" weight="0.32995737" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="1" />
+      <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="0" />
+      <window_info anchor="bottom" id="Build" order="0" weight="0.32719395" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.5302782" />
+      <window_info anchor="bottom" id="TODO" order="13" weight="0.3289689" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info id="Image Layers" order="1" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" />
+      <window_info anchor="right" id="Capture Analysis" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="5" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.8281506" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.40628386" />
+      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.22390318" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="1" weight="0.3289689" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.49837488" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="Build" order="0" weight="0.32719395" />
+      <window_info id="Designer" order="0" />
+      <window_info anchor="right" id="Palette" order="6" />
+      <window_info anchor="right" id="sbt" order="0" weight="0.32995737" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="1" weight="0.3289689" />
+      <window_info id="Image Layers" order="1" />
+      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.5232936" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.40628386" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="2" />
+      <window_info anchor="right" id="Commander" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.49837488" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" />
+      <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="5" weight="0.3289689" />
+      <window_info anchor="right" id="Maven Projects" order="1" />
+      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.2185501" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="TODO" order="13" weight="0.3289689" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.5302782" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Function demo" />
+    <MESSAGE value="commit message" />
+    <MESSAGE value="something about array in Scala" />
+    <MESSAGE value="something about class in Scala" />
+    <MESSAGE value="something about nested class in Scala" />
+    <MESSAGE value="something about object in Scala" />
+    <MESSAGE value="something about apply method in Scala" />
+    <MESSAGE value="something about App in Scala" />
+    <MESSAGE value="something about Package in Scala" />
+    <MESSAGE value="something about Inherit in Scala" />
+    <MESSAGE value="something about Abstract Class in Scala" />
+    <MESSAGE value="something about Construction order and advance definition in Scala" />
+    <option name="LAST_COMMIT_MESSAGE" value="something about Construction order and advance definition in Scala" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="7" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/InheritDemo/Employee.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="39" column="78" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/CommonDemo/ObjectDemo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/CommonDemo/PackageDemo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/CommonDemo/NestedClassDemo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/CollectionDemo/Scala集合特质.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/TraitDemo/OverrideAbstractMethodInTrait.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/CollectionDemo/CollectionOverview.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalaj/scalaj-http_2.11/jars/scalaj-http_2.11-2.3.0.jar!/scalaj/http/HttpRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="146" selection-start-line="1" selection-start-column="146" selection-end-line="1" selection-end-column="146" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalaj/scalaj-http_2.11/srcs/scalaj-http_2.11-2.3.0-sources.jar!/scalaj/http/Http.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="221" column="29" selection-start-line="221" selection-start-column="29" selection-end-line="221" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/srcs/akka-actor_2.11-2.3.16-sources.jar!/akka/event/Logging.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6102">
+          <caret line="428" column="22" selection-start-line="428" selection-start-column="12" selection-end-line="428" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_02.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_04.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="11" column="50" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_03.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/srcs/akka-actor_2.11-2.3.16-sources.jar!/akka/actor/ActorCell.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/srcs/akka-actor_2.11-2.3.16-sources.jar!/akka/actor/Actor.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="284" column="6" selection-start-line="284" selection-start-column="6" selection-end-line="284" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_05p.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="35" column="81" lean-forward="true" selection-start-line="35" selection-start-column="81" selection-end-line="35" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_05.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-455">
+          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe/config/srcs/config-1.2.1-sources.jar!/com/typesafe/config/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="515" column="11" selection-start-line="515" selection-start-column="11" selection-end-line="515" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/JavaDemo/TreeSetDemo.scala" />
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe/config/srcs/config-1.2.1-sources.jar!/com/typesafe/config/ConfigFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/test.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/application.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="70" selection-start-column="70" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/ConfDemo/Conf.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_01.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_06.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="52" lean-forward="true" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/DateDemo/DateFormatDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/commons-httpclient/commons-httpclient/srcs/commons-httpclient-3.1-sources.jar!/org/apache/commons/httpclient/HttpClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3454">
+          <caret line="193" column="15" selection-start-line="193" selection-start-column="15" selection-end-line="193" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/commons-httpclient/commons-httpclient/srcs/commons-httpclient-3.1-sources.jar!/org/apache/commons/httpclient/HostConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="902">
+          <caret line="73" column="28" selection-start-line="73" selection-start-column="11" selection-end-line="73" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/hdfsDemo/hdfsRequestDemo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_07.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/srcs/akka-actor_2.11-2.3.16-sources.jar!/akka/actor/ActorSelection.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/srcs/akka-actor_2.11-2.3.16-sources.jar!/akka/actor/ActorRefProvider.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="311" column="42" lean-forward="true" selection-start-line="311" selection-start-column="42" selection-end-line="311" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_09.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/OptionDemo.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/CommonDemo/ForDemo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/CommonDemo/ClassDemo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2354">
+          <caret line="107" column="7" selection-start-line="107" selection-start-column="7" selection-end-line="107" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/AkkaDemo/Example_08.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/CommonDemo/AppDemo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/CommonDemo/ApplyDemo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/CommonDemo/ArrayDemo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/CommonDemo/EnumerationDemo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/commons-collections/commons-collections/srcs/commons-collections-3.2.2-sources.jar!/org/apache/commons/collections/CollectionUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="685" column="64" selection-start-line="685" selection-start-column="64" selection-end-line="685" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Lang/Java/jdk1.8.0_144/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11264">
+          <caret line="553" column="13" selection-start-line="553" selection-start-column="13" selection-end-line="553" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Lang/Java/jdk1.8.0_144/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21560">
+          <caret line="1021" column="79" selection-start-line="1021" selection-start-column="79" selection-end-line="1021" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/ChangeDirDemo/ChangeDemo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/JavaDemo/TreeSetDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/ChangeDirDemo/OutPutCsv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="22" column="49" lean-forward="true" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/TraitDemo/ObjectWithTrait.scala">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/SimplifiedHttpDemo/SimplifiedHttpDemo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cn/neu/demo/ChangeDirDemo/ChangeDirFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.11.11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>scalademo</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>sbt: org.scala-lang:scala-library:2.11.11:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
