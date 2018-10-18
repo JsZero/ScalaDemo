@@ -13,78 +13,112 @@ import java.util.HashSet;
 public class ChangeDirFormat {
     public static void main(String[] args) {
         String timeLayerDir = args[args.length - 1]; // "2018-08-11";
-        String suffixPath = "D:\\Workspace\\pycharm-workspace\\ds-yum2project\\data\\hdfs_data\\";
-        for (int i = 0; i < args.length - 1; i++) {
-            String path = suffixPath + args[i];
-            System.out.println("=============================================================");
-            System.out.println(path);
-            int num = 0;
-            HashMap<String, Boolean> hs;
-            hs = new HashMap<>();
+//        String suffixPath = "D:\\Workspace\\pycharm-workspace\\ds-yum2project\\data\\hdfs_data\\";
+        String suffixPath = args[0];
 
-            try {
-                Class.forName("org.postgresql.Driver").newInstance();
-                String url = "jdbc:postgresql://172.20.41.10:5432/model_deploy";
-                Connection con = DriverManager.getConnection(url, "postgres", "talkingdata-yum");
-                Statement st = con.createStatement();
-                String sql = " select data_code,data_name,relative_path from data_code_name";
-                ResultSet rs = st.executeQuery(sql);
-                ResultSetMetaData rsmd = rs.getMetaData();
-                int columnCount = rsmd.getColumnCount();
-                while (rs.next()) {
-                    if (rs.getString(1).startsWith("TD")) {
-                        num++;
+        int num = 0;
+        HashMap<String, Boolean> hs;
+        hs = new HashMap<>();
+
+        try {
+            Class.forName("org.postgresql.Driver").newInstance();
+            String url = "jdbc:postgresql://172.20.41.10:5432/model_deploy";
+            Connection con = DriverManager.getConnection(url, "postgres", "talkingdata-yum");
+            Statement st = con.createStatement();
+            String sql = " select data_code,data_name,relative_path from data_code_name";
+            ResultSet rs = st.executeQuery(sql);
+            ResultSetMetaData rsmd = rs.getMetaData();
+            int columnCount = rsmd.getColumnCount();
+            while (rs.next()) {
+                if (rs.getString(1).startsWith("TD")) {
+                    num++;
 //                    System.out.print(rs.getString(2) + "\t");
 //                    System.out.println(rs.getString(3));
-                        HashSet<String> s = new HashSet<>();
-                        CollectionUtils.addAll(s, rs.getString(3).split(";"));
-                        hs.put(rs.getString(2), s.contains("[yyyymmdd]"));
-                    }
+                    HashSet<String> s = new HashSet<>();
+                    CollectionUtils.addAll(s, rs.getString(3).split(";"));
+                    hs.put(rs.getString(2), s.contains("[yyyymmdd]"));
                 }
-                rs.close();
-                st.close();
-                con.close();
-            } catch (Exception e) {
-                e.printStackTrace();
             }
+            rs.close();
+            st.close();
+            con.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+        int count0 = 0;
+        for (String data_name : hs.keySet()) {
+            if (hs.get(data_name) == true) {
+                System.out.println("=========================================");
+                System.out.println(data_name);
+                count0++;
+            }
+        }
+        System.out.println("=========================================");
+        System.out.println(count0);
+        System.out.println("=========================================");
 //        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++");
 //        for (String data_name : hs.keySet()) {
 //            System.out.println(data_name + "\t" + hs.get(data_name));
 //        }
+        int count1 = 0;
+        for (int i = 1; i < args.length - 1; i++) {
+            String path = suffixPath + args[i];
+
             File f = new File(path);// all
+            System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++");
+            System.out.println("path: " + path);
+            System.out.println(f.isDirectory());
             if (f.isDirectory()) {
                 try {
-                    for (File fileP : f.listFiles()) {// all的所有子文件夹
-                        if(fileP.isDirectory()){
-                            for(File file:fileP.listFiles()){
+                    for (File fileP : f.listFiles()) {// all child dir
+                        if (fileP.isDirectory()) {
+                            for (File file : fileP.listFiles()) {
                                 if (file.isDirectory()) {
-                                    File[] files = file.listFiles();//input_data等文件夹的所有子目录
+                                    File[] files = file.listFiles();//input_data child dir
                                     String parentPath = file.getAbsolutePath();
-                                    if (files.length == 1) {
-//                            files[0].rename
-                                        File sourceFile = files[0];
-                                        if (hs.get(sourceFile.getName()) == null && !isDateFormat(sourceFile.getName())) {
-                                            System.out.println("+++++++++++++++++++++++++++++++++++++++++++++");
-                                            System.out.println("Warning: [" + sourceFile.getName() + "] could not be found in database");
+//                                    System.out.println("===================================");
+//                                    for(File fi:files){
+//                                        System.out.println(fi.getAbsolutePath());
+//                                    }
+
+
+                                    if (files.length != 0) {
+                                        File sourceFile = null;
+                                        if (!files[0].getName().startsWith(".")) {
+                                            sourceFile = files[0];
+                                        } else if (files[0].getName().startsWith(".") && files.length == 2) {
+                                            sourceFile = files[1];
+                                        } else {
                                             continue;
                                         }
-                                        String sourcePath = sourceFile.getAbsolutePath();
+                                        if (hs.get(sourceFile.getName()) == null && !isDateFormat(sourceFile.getName())) {
+                                            System.out.println("+++++++++++++++++++++++++++++++++++++++++++++");
+                                            System.out.println("Warning: [" + sourceFile.getAbsolutePath() + "] could not be found in database");
+                                            continue;
+                                        }
 
+                                        String sourcePath = sourceFile.getAbsolutePath();
+                                        count1++;
                                         if (isDateFormat(sourceFile.getName())) {
                                             System.out.println("+++++++++++++++++++++++++++++++++++++++++++++");
                                             File childFile = sourceFile.listFiles()[0];
                                             String childPath = childFile.getAbsolutePath();
-                                            File originFile = new File(file.getAbsolutePath() + "\\" + childFile.getName());
+                                            File originFile = new File(file.getAbsolutePath() + "/" + childFile.getName());
                                             boolean coRes = childFile.renameTo(originFile);
-                                            System.out.println("child file [" + childPath + "]\nhas been moved to\n" +
-                                                    "origin file [" + originFile.getAbsolutePath() + "]\n" + (coRes ? "successfully" : "failed"));
+                                            System.out.println("child file [" + childPath + "] has been moved to " +
+                                                    "origin file [" + originFile.getAbsolutePath() + "] " + (coRes ? "successfully" : "failed"));
                                             boolean deRes = sourceFile.delete();
                                             System.out.println("target dir [" + sourcePath + "] has been deleted " + (deRes ? "successfully" : "failed"));
                                             continue;
+                                        } else {
+                                            System.out.println("+++++++++++++++++++++++++++++++++++++++++++++");
+                                            System.out.println("do nothing with file [" + sourcePath + "]");
                                         }
 
-                                        String targetDirPath = parentPath + "\\" + timeLayerDir;
-                                        String targetPath = parentPath + "\\" + timeLayerDir + "\\" + files[0].getName();
+                                        String targetDirPath = parentPath + "/" + timeLayerDir;
+                                        String targetPath = parentPath + "/" + timeLayerDir + "/" + sourceFile.getName();
                                         File targetDir = new File(targetDirPath);
                                         File targetFile = new File(targetPath);
                                         if (hs.get(sourceFile.getName())) {
@@ -95,13 +129,15 @@ public class ChangeDirFormat {
                                                 boolean mkdirRes = targetDir.mkdirs();
                                                 System.out.println("target dir [" + targetDir + "] has been created " + (mkdirRes ? "successfully" : "failed"));
                                                 boolean mvRes = sourceFile.renameTo(targetFile);
-                                                System.out.println("source file [" + sourcePath + "]\nhas been moved to\n" +
-                                                        "target file [" + targetPath + "]\n" + (mvRes ? "successfully" : "failed"));
+                                                System.out.println("source file [" + sourcePath + "] has been moved to " +
+                                                        "target file [" + targetPath + "] " + (mvRes ? "successfully" : "failed"));
                                             }
                                         }
 
 
                                     }
+
+
                                 }
                             }
                         }
@@ -112,6 +148,9 @@ public class ChangeDirFormat {
                 }
             }
         }
+        System.out.println("=========================================");
+        System.out.println(count1);
+        System.out.println("=========================================");
 //        for (int i = 0; i < args.length - 1; i++) {
 //            String path = args[i]; // "D:\\Workspace\\pycharm-workspace\\ds-yum2project\\data\\hdfs_data\\all\\input_data";
 //

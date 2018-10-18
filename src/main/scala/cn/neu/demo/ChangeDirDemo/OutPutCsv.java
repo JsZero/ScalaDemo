@@ -12,7 +12,7 @@ public class OutPutCsv {
         HashMap<String, Boolean> hs = new HashMap<>();
         BufferedWriter bw = null;
         try {
-            bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("C:\\Users\\imsha\\Desktop\\Yum预估二期\\database_output_by_js.csv")));
+            bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("C:\\Users\\imsha\\Desktop\\Yum预估二期\\database_output_20181011.csv")));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

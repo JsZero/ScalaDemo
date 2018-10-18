@@ -18,12 +18,10 @@ object Example_05 extends App {
       //通过context上下文创建Actor
       child = context.actorOf(Props[MyActor], name = "myChild")
     }
-
     def receive = {
       //向MyActor发送消息
       case x => child ! x; log.info("received " + x)
     }
-
     //Hook方法，postStop()，Actor停止之后调用
     override def postStop(): Unit = {
       context.stop(child)
@@ -37,12 +35,10 @@ object Example_05 extends App {
     override def preStart(): Unit = {
       log.info("preStart() in MyActor")
     }
-
     def receive = {
       case "test" => log.info("received test")
       case _ => log.info("received unknown message")
     }
-
     //Hook方法，postStop()，Actor停止之后调用
     override def postStop(): Unit = {
       log.info("postStop() in MyActor")
